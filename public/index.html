@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>*Shanmathi*</title>
+    <style>
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #140e0e;
+        
+      }
+
+      #root {
+        margin: 0 auto;
+        align-items: center;
+        background-color: #e8f5f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+    </style>
+    <script>
+      function animateTitle() {
+        var title = document.title;
+        var lastChar = title.charAt(title.length - 1);
+        var newTitle = lastChar + title.substring(0, title.length - 1);
+        document.title = newTitle;
+        setTimeout(animateTitle, 500);
+      }
+      animateTitle();
+    </script></title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    
+  </body>
+</html>
